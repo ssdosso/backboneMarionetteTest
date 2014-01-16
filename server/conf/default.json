@@ -14,9 +14,9 @@
     "db" : {
         "dbdriver":"Mysql",
         "hostname":"localhost",
-        "username" :"root",
-        "database" :"monoshift",
-        "password":"design2028ssh"
+        "username" :"",
+        "database" :"",
+        "password":""
 
 
     }
