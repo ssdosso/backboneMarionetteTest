@@ -1,0 +1,1 @@
+lessc styles.less > monoshift.css

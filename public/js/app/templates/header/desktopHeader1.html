@@ -1,0 +1,57 @@
+<div class="navbar-inner">
+    <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">VIP</a>
+
+
+        <div class="nav-collapse collapse">
+            <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <% if (user.get('isLogin') == false) { %>
+                <li><a href="#signup">Sign up</a></li>
+                <%} else {%>
+                <li><a href="#game">Game</a></li>
+
+                <% } %>
+
+            </ul>
+            <% if (user.get('isLogin') == false) { %>
+            <!--<form id="signinFrm" class="navbar-form pull-right">-->
+              <!--<div>-->
+                  <!--<input class="span2" id="userid" type="text" placeholder="userid">-->
+                <!--<input class="span2" id="password" type="password" placeholder="Password">-->
+                <!--<button type="submit" class="btn">Sign in</button>-->
+                  <!--<img alt="facebook icon" title="facebook" id="fbLogin" src="/img/facebook-24x24.png" width="32" height="30" style="cursor:pointer">-->
+              <!--</div>-->
+
+
+            <!--</form>-->
+            <div class="btn-group pull-right">
+                <a href="/#login" class="btn btn-primary">Log in</a>
+            </div>
+
+            <%} %>
+
+            <% if (user.get('isLogin') == true) { %>
+            <div class="btn-group pull-right">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-user"></i> <%= user.get("userid") %>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#profile">Profile</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="#logout"><i class="icon-off"></i> Sign out</a></li>
+                </ul>
+
+            </div>
+            <%} %>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
