@@ -1,1 +1,0 @@
-function inboxWidthFunctions(e){var t=$("#content").outerHeight(),n=$(window).width(),r=$(".tasks").height();n>767&&r<t&&$(".tasks").css("height",t)}$(window).bind("resize",inboxWidthFunctions);$(document).ready(function(){inboxWidthFunctions()});

@@ -1,1 +1,0 @@
-$.backstretch(["assets/img/lockscreen/1.jpg","assets/img/lockscreen/2.jpg","assets/img/lockscreen/3.jpg"],{fade:1e3,duration:4e3});
