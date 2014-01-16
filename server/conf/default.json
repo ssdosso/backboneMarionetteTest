@@ -1,0 +1,23 @@
+{
+
+     "service" : [ {
+         "port" : 8080,
+         "namespace" : "default"
+        }
+     ],
+    "fbId" :"575102705867343",
+    "fbId1" :"245567215541616",
+    "url":"http://sb.mono.com:8888",
+    "url1": "http://192.168.0.125:8888",
+    "cache" : true ,
+    "debug": false,
+    "db" : {
+        "dbdriver":"Mysql",
+        "hostname":"localhost",
+        "username" :"root",
+        "database" :"monoshift",
+        "password":"design2028ssh"
+
+
+    }
+}
